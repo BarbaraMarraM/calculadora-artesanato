@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precificação para Artesanato</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+            <h1> Cálculo do Preço da Peça</h1>
+
+            <label for="lucro"> Qual o lucro que pretende ganhar? (R$):</label>
+            <input type="number"  id="lucro" placeholder="Insira valores inteiros">
+
+            <label for="horas"> Quantas horas trabalhou na peça?:</label>
+            <input type="number"  id="horas" placeholder="Insira as horas sem contar os dias">
+
+            <label for="material"> Quanto custou todos os materiais usados?:</label>
+            <input type="number"  id="material" placeholder="Considere tudo o que usou para fazer a peça: Embalagem, cola, enchimento">
+
+            <label for="custoFixo"> Qual o custo fixo?(R$):</label>
+            <input type="number"  id="custoFixo" placeholder="Luz, internet, água...">
+
+            <button id="calcular" onclick="calcular()" >Calcular</button>
+
+            <div id="resultado">
+                <p id="resultadoValorHora"></p>
+                <p id="resultadoPrecoCusto"></p>
+                <p id="resultadoPrecoFinal"></p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
